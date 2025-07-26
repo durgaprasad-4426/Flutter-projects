@@ -122,17 +122,31 @@ class _AdvisePageState extends State<AdvisePage> {
                     'Seasonal Advisory',
                     'Best time to sow wheat crops.\nPrepare your fields within next 2\nweeks.',
                     Row(
+                      spacing: 8,
                       children: [
                         Container(
-                          width: 40,
-                          height: 12,
+                          width: 80,
+                          height: 24,
                           decoration: BoxDecoration(
                             color: Color(0xFFffebd6),
-                            borderRadius: BorderRadius.circular(16)
+                            borderRadius: BorderRadius.circular(16),
                           ),
-                        )
+                          child: Center(
+                            child: Text(
+                              "High Priority",
+                              style: TextStyle(
+                                color: Color(0xFFc06342),
+                                fontSize: 12,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "Valid till Aug 15",
+                          style: TextStyle(color: Colors.black, fontSize: 12),
+                        ),
                       ],
-                    )
+                    ),
                   ),
                   conR(
                     Color(0xFFeff6ff),
@@ -141,7 +155,7 @@ class _AdvisePageState extends State<AdvisePage> {
                     Icons.water_drop_outlined,
                     'Irrigation Schedule',
                     'Maintain 2-3 cm water level for\nbetter crop growth. Next irrigation\ndue in 3 days.',
-                    Text('')
+                    Text(''),
                   ),
                   conR(
                     Color(0xFFfef2f2),
@@ -150,7 +164,7 @@ class _AdvisePageState extends State<AdvisePage> {
                     Icons.bug_report_outlined,
                     'Pest Alert',
                     'High risk of aphid infestation in\ntomato crops. Apply recommended\npesticides.',
-                    Text('')
+                    Text(''),
                   ),
                   conR(
                     Color(0xFFfbf5ff),
@@ -159,7 +173,7 @@ class _AdvisePageState extends State<AdvisePage> {
                     Icons.videocam_outlined,
                     'Expert Connect',
                     'Live session with Dr. Sharma on\n"Modern Farming Techniques"\ntoday at 4 PM',
-                    Text('')
+                    Text(''),
                   ),
                   SizedBox(height: 2),
                   Text(
@@ -226,7 +240,15 @@ class _AdvisePageState extends State<AdvisePage> {
     );
   }
 
-  Widget conR(Color C, Color c1, Color c2, IconData icn, String t1, String t2, Widget w) {
+  Widget conR(
+    Color C,
+    Color c1,
+    Color c2,
+    IconData icn,
+    String t1,
+    String t2,
+    Widget w,
+  ) {
     return Container(
       width: double.infinity,
       height: 150,
@@ -259,7 +281,7 @@ class _AdvisePageState extends State<AdvisePage> {
                   ),
                 ),
                 Text(t2, style: TextStyle(color: Colors.black, fontSize: 14)),
-                w
+                w,
               ],
             ),
           ],
