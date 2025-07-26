@@ -164,7 +164,13 @@ class _AdvisePageState extends State<AdvisePage> {
                     Icons.bug_report_outlined,
                     'Pest Alert',
                     'High risk of aphid infestation in\ntomato crops. Apply recommended\npesticides.',
-                    Text(''),
+                    Text(
+                      'View Prevention Tips →',
+                      style: TextStyle(
+                        color: Color(0xFFa84035),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                   conR(
                     Color(0xFFfbf5ff),
@@ -173,7 +179,13 @@ class _AdvisePageState extends State<AdvisePage> {
                     Icons.videocam_outlined,
                     'Expert Connect',
                     'Live session with Dr. Sharma on\n"Modern Farming Techniques"\ntoday at 4 PM',
-                    Text(''),
+                    Text(
+                      'Join Seesion →',
+                      style: TextStyle(
+                        color: Color(0xFF874bbc),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                   SizedBox(height: 2),
                   Text(
