@@ -155,7 +155,30 @@ class _AdvisePageState extends State<AdvisePage> {
                     Icons.water_drop_outlined,
                     'Irrigation Schedule',
                     'Maintain 2-3 cm water level for\nbetter crop growth. Next irrigation\ndue in 3 days.',
-                    Text(''),
+                    Row(
+                      spacing: 8,
+                      children: [
+                        SizedBox(
+                          width: 180,
+                          child: LinearProgressIndicator(
+                            value: 0.65,
+                            minHeight: 8,
+                            borderRadius: BorderRadius.circular(20),
+                            backgroundColor: Colors.grey.shade300,
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              Colors.blue,
+                            ),
+                          ),
+                        ),
+                        const Text(
+                          "65%",
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black87,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   conR(
                     Color(0xFFfef2f2),
