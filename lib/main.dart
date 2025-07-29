@@ -19,7 +19,7 @@ class SacApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false, 
     // home: MarketPage(),
-    home: AdvisePage()
+    home: AdvisePage(),
     );
   }
 }
