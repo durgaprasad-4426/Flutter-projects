@@ -230,13 +230,13 @@ class _AdvisePageState extends State<AdvisePage> {
                     children: [
                       ContainerLst(
                         icn: Icons.camera_alt_outlined,
-                        C: Color(0xFFe5f8e5),
+                        C: Color.fromARGB(255, 209, 249, 209),
                         c: Colors.green,
                         txt: "Scan Crop",
                       ),
                       ContainerLst(
                         icn: Icons.headset_mic_outlined,
-                        C: Color(0xFFe5f8e5),
+                        C: Color.fromARGB(255, 209, 249, 209),
                         c: Colors.green,
                         txt: "Get Support",
                       ),
