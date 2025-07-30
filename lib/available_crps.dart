@@ -71,6 +71,14 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                 spacing: 16,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Text(
+                    "Available Crops",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Row(
                     children: [
                       SizedBox(
@@ -101,12 +109,15 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                       ),
                     ],
                   ),
-                  Text(
-                    "Available Crops",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 150),
+                    child: Text(
+                      'Crops',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   CropsCntr(
