@@ -110,7 +110,7 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 150),
+                    padding: const EdgeInsets.only(left: 250),
                     child: Text(
                       'Crops',
                       style: TextStyle(
@@ -138,6 +138,17 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                     c2: Colors.blue,
                     c3: Colors.black,
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 220),
+                    child: Text(
+                      'Vegetables',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
                   CropsCntr(
                     img: AssetImage('assets/tomato.png'),
                     txt1: 'Nagesh Reddy',
@@ -155,6 +166,17 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                     c1: Colors.lightBlueAccent,
                     c2: Colors.blue,
                     c3: Colors.black,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 250),
+                    child: Text(
+                      'Fruits',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ],
               ),
