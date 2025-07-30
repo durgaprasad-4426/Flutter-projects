@@ -107,8 +107,12 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  CropsCntr(),
-                  
+                  CropsCntr(
+                    img: AssetImage('assets/paddy.png'),
+                    txt1: 'Ramesh Patel',
+                    txt2: 'Farm Paddy, Wheat',
+                    txt3: 'Bandarulanka,\nEast Godavari,\nAndhra Pradesh',
+                  ),
                 ],
               ),
             ),
