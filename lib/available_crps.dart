@@ -74,17 +74,19 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                   Row(
                     children: [
                       SizedBox(
-                        width: 270,
+                        width: 302,
+                        height: 50,
                         child: TextFormField(
+                          // textAlign: TextAlign.justify,
                           controller: _cntrl,
                           decoration: InputDecoration(
                             prefixIcon: Icon(Icons.search_outlined),
                             border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(24),
+                              borderRadius: BorderRadius.circular(40),
                               borderSide: BorderSide(width: 1),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(24),
+                              borderRadius: BorderRadius.circular(40),
                               borderSide: BorderSide(
                                 width: 1,
                                 color: Colors.green,
@@ -110,8 +112,38 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                   CropsCntr(
                     img: AssetImage('assets/paddy.png'),
                     txt1: 'Ramesh Patel',
-                    txt2: 'Farm Paddy, Wheat',
-                    txt3: 'Bandarulanka,\nEast Godavari,\nAndhra Pradesh',
+                    txt2: 'Paddy Farmer',
+                    txt3: 'Bandarulanka,\nEast Godavari,\nAndhra Pradesh.',
+                    c1: Colors.grey,
+                    c2: Colors.green,
+                    c3: Colors.black,
+                  ),
+                  CropsCntr(
+                    img: AssetImage('assets/wheat.png'),
+                    txt1: 'Ganesh Thakur',
+                    txt2: 'Wheat Farmer',
+                    txt3: 'Shahpur,\nBetul,\nMadhya Pradesh.',
+                    c1: const Color.fromARGB(255, 248, 180, 77),
+                    c2: Colors.blue,
+                    c3: Colors.black,
+                  ),
+                  CropsCntr(
+                    img: AssetImage('assets/tomato.png'),
+                    txt1: 'Nagesh Reddy',
+                    txt2: 'Tomato Farmer',
+                    txt3: 'Manvi,\nRaichur,\nKarnataka.',
+                    c1: const Color.fromARGB(255, 248, 123, 123),
+                    c2: Colors.red,
+                    c3: Colors.black,
+                  ),
+                  CropsCntr(
+                    img: AssetImage('assets/onion.png'),
+                    txt1: 'Shankar Pawar',
+                    txt2: 'Onion Farmer',
+                    txt3: 'Lasalgaon,\nNashik,\nMaharashtra.',
+                    c1: Colors.lightBlueAccent,
+                    c2: Colors.blue,
+                    c3: Colors.black,
                   ),
                 ],
               ),
