@@ -40,9 +40,7 @@ class CropsCntr extends StatelessWidget {
                 topLeft: Radius.circular(16),
                 bottomLeft: Radius.circular(16),
               ),
-              border: Border.all(
-                color: c2,
-                width: 1),
+              border: Border.all(color: c2, width: 1),
             ),
           ),
           Padding(
@@ -58,14 +56,16 @@ class CropsCntr extends StatelessWidget {
                     color: c3,
                   ),
                 ),
-                Text(txt2, style: TextStyle(color: c3, fontSize: 14)),
-                Padding(
-                  padding: const EdgeInsets.only(top: 12, left: 60),
-                  child: Text(
-                    txt3,
-                    style: TextStyle(color: c3, fontSize: 14),
+                Text(
+                  txt2,
+                  style: TextStyle(
+                    color: c3,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
+                SizedBox(height: 12),
+                Text(txt3, style: TextStyle(color: c3, fontSize: 14)),
               ],
             ),
           ),
