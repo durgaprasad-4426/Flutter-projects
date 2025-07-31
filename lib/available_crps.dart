@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sac_app/Widgets/Crops_cntr.dart';
+import 'package:sac_app/bananalst.dart';
+// import 'package:sac_app/tomatolst.dart';
 // import 'package:sac_app/paddylst.dart';
-import 'package:sac_app/wheatlst.dart';
+// import 'package:sac_app/wheatlst.dart';
 
 class AvailableCrps extends StatefulWidget {
   const AvailableCrps({super.key});
@@ -110,7 +112,7 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Wheatlst(),
+                              builder: (context) => Bananalst(),
                             ),
                           );
                         },
