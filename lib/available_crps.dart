@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sac_app/Widgets/Crops_cntr.dart';
 import 'package:sac_app/bananalst.dart';
-// import 'package:sac_app/tomatolst.dart';
-// import 'package:sac_app/paddylst.dart';
-// import 'package:sac_app/wheatlst.dart';
+import 'package:sac_app/groundnutlst.dart';
+import 'package:sac_app/paddylst.dart';
+import 'package:sac_app/tomatolst.dart';
+import 'package:sac_app/wheatlst.dart';
 
 class AvailableCrps extends StatefulWidget {
   const AvailableCrps({super.key});
@@ -13,7 +14,7 @@ class AvailableCrps extends StatefulWidget {
 }
 
 class _AvailableCrpsState extends State<AvailableCrps> {
-  final TextEditingController _cntrl = TextEditingController();
+  TextEditingController searchController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,49 +77,33 @@ class _AvailableCrpsState extends State<AvailableCrps> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Available Crops",
+                    "Available Products",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Row(
-                    children: [
-                      SizedBox(
-                        width: 302,
-                        height: 50,
-                        child: TextFormField(
-                          // textAlign: TextAlign.justify,
-                          controller: _cntrl,
-                          decoration: InputDecoration(
-                            prefixIcon: Icon(Icons.search_outlined),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(40),
-                              borderSide: BorderSide(width: 1),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(40),
-                              borderSide: BorderSide(
-                                width: 1,
-                                color: Colors.green,
-                              ),
-                            ),
-                          ),
+                  TextField(
+                    onSubmitted: (value) {
+                      handleSearch(value, context);
+                    },
+                    controller: searchController,
+                    decoration: InputDecoration(
+                      hintText: 'Search Products...',
+                      prefixIcon: Icon(Icons.search_outlined),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(40),
+                        borderSide: BorderSide(width: 1),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(40),
+                        borderSide: BorderSide(
+                          width: 1,
+                          color: Colors.green,
                         ),
                       ),
-                      IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Bananalst(),
-                            ),
-                          );
-                        },
-                        icon: Icon(Icons.location_on_outlined, size: 32),
-                      ),
-                    ],
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 250),
@@ -243,5 +228,28 @@ class _AvailableCrpsState extends State<AvailableCrps> {
         ),
       ),
     );
+  }
+
+  void handleSearch(String query, BuildContext context) {
+    query = query.toLowerCase().trim();
+
+    if (query.contains('groundnut')) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => Groundnutlst()),
+      );
+    } else if (query.contains('paddy')) {
+      Navigator.push(context, MaterialPageRoute(builder: (_) => Paddylst()));
+    } else if (query.contains('wheat')) {
+      Navigator.push(context, MaterialPageRoute(builder: (_) => Wheatlst()));
+    } else if (query.contains('tomato')) {
+      Navigator.push(context, MaterialPageRoute(builder: (_) => Tomatolst()));
+    } else if (query.contains('banana')) {
+      Navigator.push(context, MaterialPageRoute(builder: (_) => Bananalst()));
+    } else {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("No match found for \"$query\"")));
+    }
   }
 }

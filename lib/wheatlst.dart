@@ -7,7 +7,7 @@ class Wheatlst extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFFf9fafc),
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: ClipRRect(

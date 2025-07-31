@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sac_app/Widgets/Crops_cntr.dart';
 
-class Bananalst extends StatelessWidget {
-  const Bananalst({super.key});
+class Groundnutlst extends StatelessWidget {
+  const Groundnutlst({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,7 @@ class Bananalst extends StatelessWidget {
                 spacing: 12,
                 children: [
                   Text(
-                    'Banana',
+                    'Ground Nuts',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 24,
@@ -74,47 +74,47 @@ class Bananalst extends StatelessWidget {
                     ),
                   ),
                   CropsCntr(
-                    img: AssetImage('assets/banana.png'),
-                    txt1: 'Arulmani Nagesh',
-                    txt2: 'Banana Farmer',
-                    txt3: 'Pollachi,\nCoimbatore,\nTamil Nadu.',
-                    c1: Colors.limeAccent,
-                    c2: Colors.lime,
+                    img: AssetImage('assets/groundnut.png'),
+                    txt1: 'Dinesh Solanki',
+                    txt2: 'Groundnut Farmer',
+                    txt3: 'Gondal,\nRajkot,\nGujarat.',
+                    c1: const Color.fromARGB(255, 109, 130, 248),
+                    c2: Colors.indigo,
                     c3: Colors.black,
                   ),
                   CropsCntr(
-                    img: AssetImage('assets/banana1.png'),
-                    txt1: 'Sanjay Shinde',
-                    txt2: 'Banana Farmer',
-                    txt3: 'Raver,\nJalgaon,\nMaharashtra.',
-                    c1: const Color.fromARGB(255, 170, 140, 240),
-                    c2: const Color.fromARGB(255, 0, 125, 243),
+                    img: AssetImage('assets/groundnut1.png'),
+                    txt1: 'Ravi Reddy',
+                    txt2: 'Groundnut Farmer',
+                    txt3: 'Ponnur,\nGuntur,\nAndhra Pradesh.',
+                    c1: const Color.fromARGB(255, 167, 250, 158),
+                    c2: const Color.fromARGB(255, 254, 3, 7),
                     c3: Colors.black,
                   ),
                   CropsCntr(
-                    img: AssetImage('assets/banana2.png'),
-                    txt1: 'Venkatesh Reddy',
-                    txt2: 'Banana Farmer',
-                    txt3: 'Kovur,\nNellore,\nAndhra Pradesh.',
-                    c1: const Color.fromARGB(255, 248, 136, 121),
+                    img: AssetImage('assets/groundnut2.png'),
+                    txt1: 'Rella Murugan',
+                    txt2: 'Groundnut Farmer',
+                    txt3: 'Virudhachalam,\nCuddalore,\nTamil Nadu.',
+                    c1: const Color.fromARGB(255, 121, 248, 244),
                     c2: const Color.fromARGB(255, 24, 4, 248),
                     c3: Colors.black,
                   ),
                   CropsCntr(
-                    img: AssetImage('assets/banana3.png'),
-                    txt1: 'Anup Boro',
-                    txt2: 'Banana Farmer',
-                    txt3: 'Mangaldoi,\nDarrang,\nAssam.',
-                    c1: const Color.fromARGB(255, 135, 245, 140),
+                    img: AssetImage('assets/groundnut3.png'),
+                    txt1: 'Basavaraj Patil',
+                    txt2: 'Groundnut Farmer',
+                    txt3: 'Tiptur,\nTumakuru,\nKarnataka.',
+                    c1: const Color.fromARGB(255, 228, 111, 235),
                     c2: const Color.fromARGB(255, 157, 5, 239),
                     c3: Colors.black,
                   ),
                   CropsCntr(
-                    img: AssetImage('assets/banana4.png'),
-                    txt1: 'Abhishek Kumar',
-                    txt2: 'Banana Farmer',
-                    txt3: 'Barh,\nPatna,\nBihar.',
-                    c1: const Color.fromARGB(255, 132, 217, 248),
+                    img: AssetImage('assets/groundnut4.png'),
+                    txt1: 'Suresh Jadhav',
+                    txt2: 'Groundnut Farmer',
+                    txt3: 'Phaltan,\nSatara,\nMaharashtra.',
+                    c1: const Color.fromARGB(255, 240, 198, 119),
                     c2: Colors.deepPurple,
                     c3: Colors.black,
                   ),
